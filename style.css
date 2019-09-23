@@ -21,7 +21,7 @@ html,body {
     margin-left: auto;
     margin-right: auto;
     margin-top:100px;
-    background-color: black;
+    /* background-color: black; */
 }
 .btn_one {
     float: left;
@@ -37,4 +37,29 @@ html,body {
     line-height: 40px;
     color:#a6afbf;
     text-transform: uppercase;
+}
+.btn_bg {
+    background-color: #2abb9b;
+    height: 60px;
+    width:170px;
+    position: absolute;
+    top:0;
+    margin-left:-208px;
+    z-index: -1;
+    transition: 1.0s;
+    border-radius: 5px;
+}
+span:hover + .btn_bg {
+    width: 252px;
+    margin-left: -40px;
+}
+.btn_two > span:hover {
+    color:white;
+}
+.btn_two:hover ~ .btn_one {
+    color:#a6afbf;
+}
+span {
+    padding: 10px 0;
+    transition: 1.0s;
 }
